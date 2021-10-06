@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang = "es">
+	<head>
+		<title>Prueba!</title>
+		<meta charset="utf-8" name="viewport" content="width=device-width,initial-scale=1.0">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">	
+	</head>
+	<style type="text/css">
+		body {
+			background-image: url('img/fondo.png');
+		}
+		.malla {
+				background-color: lightpink;
+				display: grid;
+				padding: 20px;
+				grid-column-gap: 20px;
+				grid-row-gap: 20px;
+				grid-template-columns: auto auto auto auto;
+				grid-template-rows: auto;
+			}
+		.item {
+			background-color: lightblue;
+			padding: 20px;
+			text-align: center;
+		}
+		.dog {
+			background-color: lightblue;
+			border: 0px;
+		}
+
+	</style>
+	<body>
+		<div >
+			<div class="malla">
+				<div class="item">
+					<input list = "Perro" placeholder = "Perro" class="dog"/>
+						<datalist id = "Perro">
+							<option value = "Alimento">
+							<option value = "Premios">
+							<option value = "Medicinas">
+							<option value = "Accesorios">
+						</datalist>
+				</div>
+					<div class="item">Gato</div>
+					<div class="item">Servicios</div>
+					<div class="item">Promociones</div>
+			</div>
+		</div>
+	</body>
+</html>

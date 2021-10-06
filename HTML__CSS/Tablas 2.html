@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang = "es">
+	<head>
+		<title>Tablas!</title>
+		<style type = "text/css">
+			table {
+				border: 1px solid;
+				background-color: red;
+				border-collapse: collapse;
+			}
+			td {
+			padding: 3px;
+				border: 1px solid;
+			}
+			th {
+				border: 1px solid;
+			}
+			#f1 {
+				background-color: blue;
+			}
+			.cb {
+				background-color: yellow;
+			}
+			#f2 {
+				background-color: green;
+			}
+		</style>
+	</head>
+	<body>
+		<thead>
+		<table>
+			<tr id = "f1">
+				<th>¿Qué</th>
+				<th>hace?</th>
+			</tr>
+		</thead>
+		<tbody class = "cb">
+			<tr>
+				<td colspan = "2">Abarco dos columnas</td>
+			</tr>
+			<tr>
+				<td rowspan= "2">Juan<br>María</td>
+				<td>Pérez</td>
+			</tr>
+			<tr>
+				<td>Pérez</td>
+			</tr>
+		</tbody>
+		<!--Comentar limeas-->
+		<tfoot id = "f2">
+			<tr>
+				<td>Total 1 </td>
+				<td>Total 2</td>
+			</tr>
+		</tfoot>
+		</table>
+	</body>
+	
+</html>

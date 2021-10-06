@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang = "es">
+	<head>
+		<meta charset = "utf-8">
+		<title>Google</title>
+		<style>
+			.tam {
+				width: 550px;
+				height: 40px;
+				border-radius: 80px;
+				border-color: rgb(229, 231, 233);
+			}
+			.inner-addon {
+				position: relative;
+			}
+			.inner-addon .glyphicon {
+				position: absolute;
+				padding: 10px;
+				pointer-events: none;
+			}
+			.left-addon .glyphicon {
+				left: 0px;
+			}
+			.left-addon input {
+				padding-left: 30px;
+			}
+		</style>
+	</head>
+	<body>
+
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+
+	<div class="inner-addon left-addon">
+	  <i class="glyphicon glyphicon-search"></i>
+	  <form action = "https://www.google.com/search">
+			<input type = "text" name = "q" class = "tam">
+	</div>	
+	</body>
+</html>

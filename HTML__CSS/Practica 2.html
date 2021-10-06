@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang = "es">
+	<head>
+		<meta charset = "utf-8">
+		<title>Búsqueda!</title>
+	</head>
+	<body>
+		<form>
+		<table>
+			<tr>
+				<td>
+					<label>Nombre*:</label>
+				</td>
+				<td>
+					<input type = "text" placeholder = "Nombres" required>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label>Apellido paterno*:</label>
+				</td>
+				<td>
+					<input type = "text" placeholder = "Apellido paterno" required>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label>Apellido materno:</label>
+				</td>
+				<td>
+					<input type = "text" placeholder = "Apellido materno">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label>Fecha de nacimiento*:</label>
+				</td>
+				<td>
+					<input type = "date" placeholder = "Fecha de nacimiento" required>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label>Dirección*:</label>
+				</td>
+				<td>
+					<input type = "text" placeholder = "Dirección" required>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label>Teléfono*:</label>
+				</td>
+				<td>
+					<input type = "tel" pattern = "[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder = "Teléfono" required>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label>Correo electrónico*:</label>
+				</td>
+				<td>
+					<input type = "email" placeholder = "Correo electrónico" required>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label>Helado favorito:</label>
+				</td>
+				<td>
+					<!--select name = "cars" id = "cars">
+						<option value = "volvo">Volvo</option>
+						<option value = "saab">Saab</option>
+						<option value = "mercedes">Mercedes</option>
+						<option value = "audi">Audi</option>
+					</select!-->
+					<input list = "ice-cream-flavors"/>
+					<datalist id = "ice-cream-flavors">
+						<option value = "Chocolate">
+						<option value = "Coconut">
+						<option value = "Mint">
+						<option value = "Strawberry">
+						<option value = "Vanilla">
+					</datalist>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input type = "submit" value = "Enviar">
+				</td>
+				<td>
+					<input type = "reset" value = "Limpiar">
+				</td>
+			</tr>
+		</table>
+
+			<input type = "checkbox" id = "chk" required>
+			<label for = "chk">He leído términos y condiciones*</label>
+	
+		</form>	
+	</body>
+</html>
