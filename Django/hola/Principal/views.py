@@ -9,4 +9,7 @@ def pepe(request):
     return HttpResponse("Hola Pepe!")
 
 def holaTu(request, nombre):
-    return HttpResponse('Hola {nombre.capitalize()}!')
+    return HttpResponse(f'Hola {nombre.capitalize()}!')
+
+def indice(request):
+    return render(request, 'Principal/index.html')
