@@ -13,3 +13,6 @@ def holaTu(request, nombre):
 
 def indice(request):
     return render(request, 'Principal/index.html')
+
+def indiceParam(request, nombre):
+    return render(request, 'Principal/saludo.html', {'nombre': nombre.capitalize()})
