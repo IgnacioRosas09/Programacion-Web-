@@ -2,6 +2,5 @@ from django.urls import path
 from . import views
 
 urlpatterns = [
-    path('indice', views.indice, name='indice'),
-    path('indice/<str:nombre>', views.indiceParam, name='indice')
+    path('indice/<str:date>', views.indiceParam, name='indice')
     ]
