@@ -5,4 +5,8 @@ from .models import Flight
 
 def index(request):
     return render(request, 'Aerolinea/index.html', {"flights": Flight.objects.all()})
+
+def flight(request, flight_id):
+    flight = Flight.objects.get(id=flight_id)
+    return render(request, 'Aerolinea/flight.html', {'flight': flight})
     
