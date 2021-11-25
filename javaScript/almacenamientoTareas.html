@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <script>
+            //Si no existe un valor para tareas, crea la key
+            // De no existir en el localStorage, el comportamiento cuando
+            // busquemos el valor localStorage.getItem('tareas'); sería inesperado
+            if (!localStorage.getItem('tareas')) {
+                localStorage.setItem('tareas', "");
+            }
+            
+            document.addEventListener('DOMContentLoaded', () => {
+                //Obtener las tareas almacenadas en el localStorage
+                // y remplaza el contenido de la lista no ordenada
+                document.querySelector('#tareas').innerHTML = localStorage.getItem('tareas');
+
+                //Código para agregar una tarea a la lista
+                const enviar = document.querySelector('#enviar');
+                const nuevaTarea = document.querySelector('#tarea');
+
+                //Activa y desactiva el boton de submit del formulario
+                // cuando el contenido del input es vacio = disable = true
+                enviar.disabled = true;
+                nuevaTarea.onkeyup = () => {
+                    if (nuevaTarea.value.length > 0) {
+                        enviar.disabled = false;
+                    } else {
+                        enviar.disabled = true;
+                    }
+                }
+
+            document.querySelector('form').onsubmit = () => {
+                //Código para agregar una tarea a la lista
+                const tarea = nuevaTarea.value;
+                const li = document.createElement('li');
+                li.innerHTML = tarea;
+                document.querySelector('#tareas').append(li);
+                nuevaTarea.value = '';
+                enviar.disabled = true;
+                //Se almacena el contenido de la lista en el localStorge
+                let tareas = document.querySelector('#tareas').innerHTML;
+                localStorage.setItem('tareas', tareas);
+                // Evita que el envío del formulario recargue la página
+                return false;
+            }
+            });
+        </script>
+        <title>Almacenamiento Local</title>
+    </head>
+    <body>
+        <h1>Lista de Tareas</h1>
+        <ul id="tareas">
+        </ul>
+        <form>
+            <input id="tarea" autocomplete="off" autofocus placeholder="Nueva tarea" type="text">
+            <input id="enviar" type="submit">
+        </form>
+    </body>
+</html>
