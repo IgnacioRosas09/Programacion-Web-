@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Prueba con funciones</title>
+        <style>
+            .post {
+                background-color: chartreuse;
+                padding: 20px;
+                margin: 10px;
+            }
+            body {
+                padding-bottom: 50px;
+            }
+        </style>
+
+        <script>
+           let counter = 1;
+           const quantity = 20;
+           document.addEventListener('DOMContentLoaded', load);
+
+           window.onscroll = () => {
+               if(window.innerHeight + window.scrollYOffset >= document.body.offsetHeight) {
+                   load();
+               }
+           };
+
+           function load() {
+               const start = counter;
+               const end = start + quantity - 1;
+               counter = end + 1;
+
+               fetch(`/posts?start=${start}&end=${end}`)
+               .then(response => response.json())
+               .then(data => {
+                   data.posts.forEach(add_post);
+               })
+           };
+
+           function add_post(contents) {
+               const post = document.createElement('div');
+               post.className= 'post';
+               post.innerHTML = contents;
+
+               document.querySelector('#posts').append(post);
+           };
+        </script>
+    </head>
+    <body>
+        <div id="posts"></div>
+    </body>
+    
+</html>
