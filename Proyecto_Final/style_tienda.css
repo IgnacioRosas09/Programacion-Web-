@@ -1,0 +1,50 @@
+<style type="text/css">
+	.malla2 {
+		background-color: rgb(50, 126, 50);
+		display: grid;
+		padding: auto;
+		grid-column-gap: auto;
+		grid-template-columns: 400px 400px 400px;
+		grid-template-rows: auto auto auto;
+		position: absolute;
+		margin: 50px;
+		right: 2.2%;
+	}
+	.item2 {
+		background-color: rgb(208, 211, 208);
+		padding: 2px;
+		text-align: center;
+		font-size: 16px;
+	}
+	.img {
+		height: 180px;
+		width: 200px;
+	}
+	.sty {
+		font-weight: bolder;
+		font-size: 16px;
+	}
+	.bto {
+		background-color: rgb(50, 126, 50);
+		color: white;
+		padding: 10px;
+		font-size: 15px;
+		border: none;
+		border-radius: 80px;
+	}
+	.bto:Hover {
+		background-color: black;
+	}
+	.stl {
+		font-family: Arial black;
+		font-size: 18px;
+		color: white;
+		text-align: center;
+	}
+	.stl_1 {
+		font-family: Arial;
+		font-size: 15px;
+		color: black;
+		text-align: center;
+	}
+</style>

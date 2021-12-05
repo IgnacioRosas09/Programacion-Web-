@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="es">
+
+	<head>
+		<title>Más sobre nosotros | Clínica San Bernardo</title>
+		<meta charset="utf-8" name="viewport" content="width=device-width,initial-scale=1.0">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+		<link rel="shortcut icon" href="img/icon/veterinario.png">
+		<link rel="stylesheet" type="text/css" href="style_veterinaria.css">
+		<link rel="stylesheet" type="text/css" href="style_tienda.css">
+		<link rel="stylesheet" type="text/css" href="styleF.css">
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+	</head>
+
+	<style type="text/css">
+		body {
+			background-color: white;
+		}
+		.malla1 {
+			background-color: white;
+			display: grid;
+			padding: auto;
+			grid-column-gap: auto;
+			grid-template-columns: 400px 800px;
+			grid-template-rows: auto;
+			position: absolute;
+			margin: 50px 70px;
+		}
+		.malla2 {
+			background-color: white;
+			display: grid;
+			padding: auto;
+			grid-column-gap: auto;
+			grid-template-columns: 200px 1000px;
+			grid-template-rows: auto;
+			position: absolute;
+			margin: 50px 70px;
+		}
+		.item1 {
+			background-color: white;
+			padding: 5px;
+		}
+		.stl {
+			font-family: Arial black;
+			font-size: 22px;
+			color: rgb(50, 126, 50);
+			text-align: center;
+			margin-top: 20px;
+			margin-right: 20px;
+		}
+		.stl_1 {
+			font-family: Arial;
+			font-size: 15px;
+			color: black;
+			text-align: justify;
+			margin-right: 20px;
+		}
+		div.malla1 {
+			border-style: outset;
+			border-color: lightgray;
+			box-shadow: 3px 3px 5px gray;
+		}
+		div.malla2 {
+			border-style: outset;
+			border-color: lightgray;
+			box-shadow: 3px 3px 5px gray;
+		}
+		.tl {
+			font-family: Arial black;
+			font-size: 22px;
+			color: rgb(50, 126, 50);
+			text-align: center;
+		}
+	</style>
+	<body>
+		<div class="malla_1" >
+			<div class="item_1"><label class="th_2"><img src="img/icon/proteger.png" height="20" width="20"><span> </span> Compras seguras online</label></div>
+			<div class="item_1"><label class="th_2"><img src="img/icon/pago.png" height="23" width="23"><span> </span> Pago contra entrega</label></div>
+			<div class="item_1"><label class="th_2"><img src="img/icon/entrega.png" height="23" width="23"><span> </span> Entregas el mismo día</label></div>
+			<div class="item_1"></div>
+			<div class="item_1"></div>
+			<div class="item_1"></div>
+			<div class="item_1"><label class="th_2">Llámanos</label></div>
+			<div class="item_1"><a href="https://wa.me/525580818283?text=Me%20interesa%20el%20servicio" style="color: white;">+525580818283</a></div>
+			<div class="item_1"><label class="th_2">Escribenos</label></div>
+			<div class="item_1"><a href="https://www.facebook.com/Cl%C3%ADnica-San-Bernardo-110250224824924"><img src="img/icon/facebook.png" height="25" width="25"></a></div>
+			<div class="item_1"><a href="#"><img src="img/icon/instagram.png" height="30" width="30"></a></div>
+		</div>
+		<div class="malla_2">
+			<div class="item_2"><a href="file:///C:/Users/world/Desktop/Proyecto%20Programacion%20Web/Cl%C3%ADnica.html"><img src="img/icon/veterinario.png" height="50" width="50"></a></div>
+			<div class="item_2"><input type="text" placeholder=" 🔍    ¿Qué necesita tu mascota?" name="q" class="tam"></div>
+			<div class="item_2"><img src="img/icon/mexico.png" height="23" width="23"></div>
+			<div class="item_2">
+				<div class="opc">
+ 					<button id="btn1" class="btn_1">Ubicación</button>
+						<div id="opc1" class="opc-cont-1" style="min-width: 50px;">
+							<a href="#">CDMX</a>
+							<a href="#">EDOMEX</a>
+					    </div>
+				</div>
+			</div>
+			<script>
+				document.getElementById("btn1").onclick = function() {myFunction()};
+				function myFunction() {
+  					document.getElementById("opc1").classList.toggle("show");
+  				}
+			</script>
+			<div class="item_1">
+				<div class="opc">
+ 					<button id="btn2" class="btn_1">Crear cuenta</button>
+						<div id="opc2" class="opc-cont-1" style="min-width: 130px;">
+							<a href="file:///C:/Users/world/Desktop/Proyecto%20Programacion%20Web/form_sesion.html">Iniciar sesión</a>
+							<a href="http://localhost/php/form_cuenta/form_cuenta.html">Crear cuenta</a>
+					    </div>
+				</div>
+			</div>
+			<script>
+				document.getElementById("btn2").onclick = function() {myFunction2()};
+				function myFunction2() {
+	  				document.getElementById("opc2").classList.toggle("show");
+	  			}
+			</script>
+			<div class="item_1"><a href="#"><img src="img/icon/agregar.png" height="30" width="30"></a></div>	
+		</div>
+
+		<div class="opc">
+ 			<button id="btn4" class="btn">Perro</button>
+			<div id="opc4" class="opc-cont-2">
+				<table class="table_2">
+					<thead class="bo">
+					<tr class="th_1">
+						<th>Alimento</th>
+					    <th>Alimento Prescripción</th>
+					    <th>Premios</th>
+					    <th>Medicinas</th>
+					    <th>Cuidado e Higiene</th>
+					    <th>Más categorías</th>
+					</tr>
+					</thead>
+					<tr>
+						<td><a href="file:///C:/Users/world/Desktop/Proyecto%20Programacion%20Web/Perro_croquetas.html">Croquetas</a></td>
+						<td><a href="file:///C:/Users/world/Desktop/Proyecto%20Programacion%20Web/Pre_croquetas.html">Croquetas</a></td>
+						<td><a href="file:///C:/Users/world/Desktop/Proyecto%20Programacion%20Web/Perro_galletas.html">Galletas</a></td>
+						<td><a href="file:///C:/Users/world/Desktop/Proyecto%20Programacion%20Web/Perro_Medicina.html">Medicamentos</a></td>
+						<td><a href="file:///C:/Users/world/Desktop/Proyecto%20Programacion%20Web/Perro_cuidados.html">Residuos de mascotas</a></td>
+						<td><a href="file:///C:/Users/world/Desktop/Proyecto%20Programacion%20Web/Perro_accesorios.html">Accesorios</a></td>
+					</tr>
+					<tr>
+						<td><a href="file:///C:/Users/world/Desktop/Proyecto%20Programacion%20Web/Perro_humedo.html">Humedo</a></td>
+						<td><a href="file:///C:/Users/world/Desktop/Proyecto%20Programacion%20Web/Pre_humedo.html">Humedo</a></td>
+						<td><a href="file:///C:/Users/world/Desktop/Proyecto%20Programacion%20Web/Perro_carnazas.html">Carnaza</a></td>
+						<td><a href="file:///C:/Users/world/Desktop/Proyecto%20Programacion%20Web/Perro_aParasitos.html">Antiparasitarios</a></td>
+					</tr>
+					<tr>
+						<td><a href="file:///C:/Users/world/Desktop/Proyecto%20Programacion%20Web/Perro_natural.html">Naturales</a></td>
+						<td></td>
+						<td><a href="file:///C:/Users/world/Desktop/Proyecto%20Programacion%20Web/Perro_aderezos.html">Aderezo y Sazonador</a></td>
+						<td><a href="file:///C:/Users/world/Desktop/Proyecto%20Programacion%20Web/Perro_Higiene.html">Higiene</a></td>
+					</tr>	
+				</table>
+			</div>
+		</div>
+		<script>
+			document.getElementById("btn4").onclick = function() {myFunction4()};
+			function myFunction4() {
+  				document.getElementById("opc4").classList.toggle("show");
+  			}
+		</script>
+		<div class="opc">
+			<button id="btn5" class="btn">Gato</button>
+			<div id="opc5" class="opc-cont-3">
+				<table class="table_2">
+					<thead class="bo">
+					<tr class="th_1">
+						<th>Alimento</th>
+					    <th>Alimento Prescripción</th>
+					    <th>Arenas</th>
+					    <th>Premios</th>
+					    <th>Accesorios</th>
+					    <th>Más categorías</th>
+					</tr>
+					</thead>
+					<tr class="td">
+						<td><a href="file:///C:/Users/world/Desktop/Proyecto%20Programacion%20Web/Gato_croquetas.html">Croquetas</a></td>
+						<td><a href="file:///C:/Users/world/Desktop/Proyecto%20Programacion%20Web/PreG_croquetas.html">Croquetas</a></td>
+						<td><a href="file:///C:/Users/world/Desktop/Proyecto%20Programacion%20Web/Arenas.html">Arenas</a></td>
+						<td><a href="file:///C:/Users/world/Desktop/Proyecto%20Programacion%20Web/Gato_galletas.html">Galletas</a></td>
+						<td><a href="file:///C:/Users/world/Desktop/Proyecto%20Programacion%20Web/Gato_transpor.html">Transportadoras</a></td>
+						<td><a href="file:///C:/Users/world/Desktop/Proyecto%20Programacion%20Web/Gato_medic.html">Medicinas</a></td>
+					</tr>
+					<tr class="td">
+						<td><a href="file:///C:/Users/world/Desktop/Proyecto%20Programacion%20Web/Gato_humedo.html">Humedo</a></td>
+						<td><a href="file:///C:/Users/world/Desktop/Proyecto%20Programacion%20Web/PreG_humedo.html">Humedo</a></td>
+						<td></td>
+						<td><a href="file:///C:/Users/world/Desktop/Proyecto%20Programacion%20Web/Gato_aderezos.html">Aderezos</a></td>
+						<td><a href="file:///C:/Users/world/Desktop/Proyecto%20Programacion%20Web/Gato_comederos.html">Comederos y bebedero</a></td>
+					</tr>
+					<tr class="td">
+						<td></td>
+						<td></td>
+						<td></td>
+						<td><a href="file:///C:/Users/world/Desktop/Proyecto%20Programacion%20Web/Gato_catnip.html">Catnip</a></td>
+						<td><a href="file:///C:/Users/world/Desktop/Proyecto%20Programacion%20Web/Gato_juguetes.html">Juguetes</a></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		<script>
+			document.getElementById("btn5").onclick = function() {myFunction5()};
+			function myFunction5() {
+  				document.getElementById("opc5").classList.toggle("show");
+  			}
+		</script>
+		<div class="opc">
+			<button id="btn6" class="btn">Servicios</button>
+			<div id="opc6" class="opc-cont-4">
+				<table class="table_2">
+					<thead class="bo">
+					<tr class="th_1">
+						<th>Clínica</th>
+					    <th>Servicios a domicilio</th>
+					</tr>
+					</thead>
+					<tr class="td">
+						<td><a href="https://www.google.com.mx/maps/@19.4566693,-99.2374538,3a,75y,43.41h,90t/data=!3m7!1e1!3m5!1sl2l8tyi1K7faFGxqjbY7_Q!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fpanoid%3Dl2l8tyi1K7faFGxqjbY7_Q%26cb_client%3Dmaps_sv.tactile.gps%26w%3D203%26h%3D100%26yaw%3D41.734055%26pitch%3D0%26thumbfov%3D100!7i16384!8i8192?hl=es">Ubicación</a></td>
+						<td><a href="http://localhost/php/form_agenda/form_agenda.html">Sacar cita</a></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		<script>
+			document.getElementById("btn6").onclick = function() {myFunction6()};
+			function myFunction6() {
+  				document.getElementById("opc6").classList.toggle("show");
+  			}
+  		</script>
+		<div class="opc">
+			<button id="btn8" class="btn">Blog</button>
+		</div>
+
+		<div class="malla1">
+			<div class="item1" style="text-align: center; margin: auto;" ><img src="img/otros/ic_3.png" ></div>
+			<div class="item1" style="text-align: center;"><label class="stl">Clínica San Bernardo</label> <br />
+				<p class="stl_1">En la Clínica San Bernardo, la salud y bienestar de tu mascota es lo más importante. Nos esforzamos día a día por dar la mejor experiencia y servicio a los pet lovers y para que a sus peluditos no les falte nada para su cuidado y mimos.</p>
+				<p class="stl_1">Contamos con repartidores propios operativos en la CDMX y Área Metropolitana, lo que nos permite entregar a domicilio los pedidos en el mismo día para que la experiencia de usuario sea la mejor posible. Además, te facilitamos el pago: puedes pagar en línea o contra entrega. Tú eliges si quieres hacerlo en efectivo o con tarjeta.</p>
+				<p class="stl_1">¡San Bernardo es para todos! En nuestra tienda encontrarás productos desde la gama económica a la super premium. Todo un universo de soluciones para tu mascota.</p>
+			</div>
+		</div>
+
+		<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+		<br>
+
+		<div class="malla2">
+			<div class="item1" style="margin: auto;"><label class="tl" >UBICACIÓN</label></div>
+			<div class="item1" style="text-align: center;">
+				<iframe src="https://www.google.com/maps/embed?pb=!4v1638488515242!6m8!1m7!1sl2l8tyi1K7faFGxqjbY7_Q!2m2!1d19.45666929605942!2d-99.2374538333211!3f43.412317507661975!4f0!5f0.7820865974627469" width="900" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+			</div>
+		</div>
+		
+
+		<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+		<br>
+
+		<footer class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="footer-col">
+						<img src="img/icon/veterinario.png" height="50" width="50"><br><h4>SAN BERNARDO</h4>						
+					</div>
+					<div class="footer-col">
+						<h4>ACERCA DE CLÍNICA SAN BERNARDO</h4>
+						<ul>
+							<li><a href="file:///C:/Users/world/Desktop/Proyecto%20Programacion%20Web/Nosotros.html#">Sobre nosotros</a></li>
+							<li><a href="file:///C:/Users/world/Desktop/Proyecto%20Programacion%20Web/Blog.html">Blog</a></li>
+							<li><a href="#">Términos y condiciones</a></li>
+						</ul>						
+					</div>
+					<div class="footer-col">
+						<h4>LINKS DE INTERÉS</h4>
+						<ul>
+							<li><a href="file:///C:/Users/world/Desktop/Proyecto%20Programacion%20Web/FAQ.html">Preguntas frecuentes</a></li>
+							<li><a href="#">Política de Privacidad</a></li>
+							<li><a href="file:///C:/Users/world/Desktop/Proyecto%20Programacion%20Web/Politica%20entrega.html#">Política de Entregas</a></li>
+						</ul>						
+					</div>
+					<div class="footer-col">
+						<h4>SÍGUENOS</h4>
+						<div class="social">
+							<a href="https://www.facebook.com/Cl%C3%ADnica-San-Bernardo-110250224824924"><i class="fab fa-facebook"></i></a>
+							<a href="#"><i class="fab fa-instagram"></i></a>
+						</div>							
+					</div>
+				</div>
+			</div>	
+		</footer>
+
+	</body>
+</html>
